@@ -1,0 +1,74 @@
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+  --third-color: #303030;
+  --fourth-color: #3b8dc7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+.container p {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.total input {
+  width: 20%;
+}
+
+.total span {
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 1px;
+}
+.total span::before {
+  content: "Total: ";
+}
+
+button {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: var(--fourth-color);
+}
+
+.btns {
+  display: flex;
+}
+
+.outputs table th,td {
+  padding: 2px;
+}
